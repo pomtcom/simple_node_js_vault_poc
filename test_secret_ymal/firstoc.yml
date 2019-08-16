@@ -1,0 +1,16 @@
+kind: "Pod"
+apiVersion: "v1"
+metadata:
+  name: "architect-frontend22"
+spec:
+  template: 
+    metadata:
+      labels:
+        name: "architect-frontend22"
+    spec:
+      containers:
+        - name: "helloworld"
+          image: "openshift/origin-ruby-sample"
+          ports:
+            - containerPort: 8080
+              protocol: "TCP"
